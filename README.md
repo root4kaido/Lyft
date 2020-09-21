@@ -7,6 +7,11 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 
 - MLflowで実験管理したい．
 
+| Notebook | Contents |
+| ------ | ------ |
+| 0921.ipynb | zarrの中身を見る．とりあえず，sampleの，agentを確認． |
+
+
 ---
 09/20
 
@@ -15,4 +20,14 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 ---
 09/21
 
-データ見てみる．
+データ見てみた．zarrとかいうわけわからんのが本体と，地図で構成されている．
+
+https://www.kaggle.com/kool777/lyft-level5-eda-training-inference#notebook-container
+↑マジ有能イケメンノートブック．これでなんとかzarrの取扱いわかりそう．
+
+__sample,train,validate,testは，それぞれagents, agents_mask, frames, scenes, traffic_light_facesで構成されているっぽい．__
+
+0921.ipynbで，とりあえずagentの中身を見た．
+### 発見
+- agentはなんかいろんな物体で，そのときの __位置，大きさ，速度，回転，ラベル__ が入っている．
+- ラベルは，3種類と，不明(←これが多い)の4種類しかない！→とおもったけどこれはsampleのはなし．
