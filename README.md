@@ -22,7 +22,7 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 
 データ見てみた．zarrとかいうわけわからんのが本体と，地図で構成されている．
 
-https://www.kaggle.com/kool777/lyft-level5-eda-training-inference#notebook-container
+https://www.kaggle.com/kool777/lyft-level5-eda-training-inference#notebook-container \
 ↑マジ有能イケメンノートブック．これでなんとかzarrの取扱いわかりそう．
 
 __sample,train,validate,testは，それぞれagents, agents_mask, frames, scenes, traffic_light_facesで構成されているっぽい．__
@@ -31,3 +31,20 @@ __sample,train,validate,testは，それぞれagents, agents_mask, frames, scene
 ### 発見
 - agentはなんかいろんな物体で，そのときの __位置，大きさ，速度，回転，ラベル__ が入っている．
 - ラベルは，3種類と，不明(←これが多い)の4種類しかない！→とおもったけどこれはsampleのはなし．
+
+---
+09/22
+
+0922.ipynbで，引き続き残りのデータを見た．
+### 発見
+- sceneは，host(収集した車)関係のデータ
+- framは，hostの位置とか，回転とか，より詳細のデータ
+- traffic lightは，信号機のデータ
+- visualizeは色々できそう．まだよくわかってない．衛星写真と，よくわからないの二種類．
+
+0922_2.ipynbで，training_templateを見た． \
+所感，結構学習の仕方が違う．データセットの作り方はに種類ある．agentと，ego． \
+egoは，なんか固定される．agentは，視点が動いた．
+
+epochっていう感じじゃないのかな？？
+CPUの数は0じゃないとすーぐメモリ死ぬので注意．
