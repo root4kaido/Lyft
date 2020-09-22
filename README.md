@@ -10,6 +10,8 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | Notebook | Contents |
 | ------ | ------ |
 | [0921.ipynb](https://github.com/root4kaido/Lyft/blob/master/0921.ipynb) | zarrの中身を見る．とりあえず，sampleの，agentを確認． |
+| [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922.ipynb) | zarrの中身を見る．scene, frame, trafficを確認．visualizeもした． |
+| [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922_2.ipynb) | training_tamplateを作成した．(途中) |
 
 
 ---
