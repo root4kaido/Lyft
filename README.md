@@ -11,7 +11,8 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | ------ | ------ |
 | [0921.ipynb](https://github.com/root4kaido/Lyft/blob/master/0921.ipynb) | zarrの中身を見る．とりあえず，sampleの，agentを確認． |
 | [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922.ipynb) | zarrの中身を見る．scene, frame, trafficを確認．visualizeもした． |
-| [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922_2.ipynb) | training_tamplateを作成した．(途中) |
+| [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922_2.ipynb) | training_templateを作成した．(途中) |
+| [0923.ipynb](https://github.com/root4kaido/Lyft/blob/master/0923.ipynb) | trainin_templateの続きを作成． |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -56,3 +57,7 @@ CPUの数は0じゃないとすーぐメモリ死ぬので注意．
 
 ---
 09/23
+
+0923.ipynbで，とりあえずtraining回した． \
+やっぱり，データ数が多すぎ．ただ，templateの人も，batch32:itr25000で，スコア130位出していた． \
+まだ，実験の仕組みは整えていないので，一回提出した後に，作る．
