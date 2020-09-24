@@ -13,6 +13,9 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922.ipynb) | zarrの中身を見る．scene, frame, trafficを確認．visualizeもした． |
 | [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922_2.ipynb) | training_templateを作成した．(途中) |
 | [0923.ipynb](https://github.com/root4kaido/Lyft/blob/master/0923.ipynb) | trainin_templateの続きを作成． |
+| [0924.ipynb](https://github.com/root4kaido/Lyft/blob/master/0923.ipynb) | trainin_templateの続きを作成． |
+| [0924.ipynb](https://github.com/root4kaido/Lyft/blob/master/0924.ipynb) | inference_templateを作成． |
+| [0924_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0924_2.ipynb) | mlflowの，training_templateを作成． |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -61,3 +64,12 @@ CPUの数は0じゃないとすーぐメモリ死ぬので注意．
 0923.ipynbで，とりあえずtraining回した． \
 やっぱり，データ数が多すぎ．ただ，templateの人も，batch32:itr25000で，スコア130位出していた． \
 まだ，実験の仕組みは整えていないので，一回提出した後に，作る．
+
+---
+09/24
+
+0924.ipynbで，inferenceしてみた．→できたので，提出してみた．推論の時間バカ長い．スコアは，260くらい．データ少ないのが原因かな多分． \
+0924_2.ipynbで，mlflowを組み込んだtraining作成．ちなみに，モデルのpretrainをtrueにした．これをベースにする予定． \
+あと，PANDAのsolutionを聴講したので，時間あるときに気になったものを深堀する．
+
+
