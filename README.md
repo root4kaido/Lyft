@@ -17,6 +17,8 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0924.ipynb](https://github.com/root4kaido/Lyft/blob/master/0924.ipynb) | inference_templateを作成． |
 | [0924_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0924_2.ipynb) | mlflowの，training_templateを作成． |
 | [0925.ipynb](https://github.com/root4kaido/Lyft/blob/master/0925.ipynb) | ラスタサイズと，epoch，データ量の変更|
+| [0926.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926.ipynb) | inferenceだけで自信度出せるか検討→無理 |
+| [0926_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926_2.ipynb) | マルチなモデルと，lossを変更したtraining |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -78,4 +80,9 @@ CPUの数は0じゃないとすーぐメモリ死ぬので注意．
 
 0925.ipynbで，ラスタサイズを224→448，またepoch数を減らして使うデータセットの数を増やした． \
 confidenceは，inferenceだけで出せるような気がしたので，試す．
+
+---
+09/26
+
+0926,0926_2.ipynbで，マルチ予測モデルを作った．また，lossを評価指標に合わせた．
 
