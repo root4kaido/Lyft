@@ -19,6 +19,7 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0925.ipynb](https://github.com/root4kaido/Lyft/blob/master/0925.ipynb) | ラスタサイズと，epoch，データ量の変更|
 | [0926.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926.ipynb) | inferenceだけで自信度出せるか検討→無理 |
 | [0926_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926_2.ipynb) | マルチなモデルと，lossを変更したtraining |
+| [0927.ipynb](https://github.com/root4kaido/Lyft/blob/master/0927.ipynb) | ラスタサイズとか，ピクセルサイズとか変えた．pretrainをやめた． |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -88,7 +89,10 @@ confidenceは，inferenceだけで出せるような気がしたので，試す�
 
 ---
 09/27
+
 0926_2.ipynbは，pretrainedを使っていた．これ，10epoで実験した結果，falseのほうが良さそう(画像サイズ224じゃないので，それはそう)
 左が，pretrainなし．右が，pretrain \
 <img src="https://github.com/root4kaido/Lyft/blob/master/Material/loss_nopre.png" width=25%><img src="https://github.com/root4kaido/Lyft/blob/master/Material/loss_pre.png" width=25%>
 
+0927.ipynbで，ラスタサイズとピクセルサイズをいいかんじにしたものをtraining． \
+やはり，まだagentとegoのちがいがよくわかっていない．dataloaderから取れてくるものは，画像だけではない．
