@@ -89,5 +89,6 @@ confidenceは，inferenceだけで出せるような気がしたので，試す�
 ---
 09/27
 0926_2.ipynbは，pretrainedを使っていた．これ，10epoで実験した結果，falseのほうが良さそう(画像サイズ224じゃないので，それはそう)
-
+左が，pretrainなし．右が，pretrain \
+<img src="https://github.com/root4kaido/Lyft/blob/master/Material/loss_nopre.png" width=25%><img src="https://github.com/root4kaido/Lyft/blob/master/Material/loss_pre.png" width=25%>
 
