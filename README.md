@@ -20,6 +20,7 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0926.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926.ipynb) | inferenceだけで自信度出せるか検討→無理 |
 | [0926_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926_2.ipynb) | マルチなモデルと，lossを変更したtraining |
 | [0927.ipynb](https://github.com/root4kaido/Lyft/blob/master/0927.ipynb) | ラスタサイズとか，ピクセルサイズとか変えた．pretrainをやめた． |
+| [0928.ipynb](https://github.com/root4kaido/Lyft/blob/master/0928.ipynb) | resnet18→34 |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -96,3 +97,12 @@ confidenceは，inferenceだけで出せるような気がしたので，試す�
 
 0927.ipynbで，ラスタサイズとピクセルサイズをいいかんじにしたものをtraining． \
 やはり，まだagentとegoのちがいがよくわかっていない．dataloaderから取れてくるものは，画像だけではない．
+
+---
+09/28
+
+0927.ipynbがよくなかった．謎． \
+一回，いいスコアが出るはずの[ノートブック](https://www.kaggle.com/corochann/lyft-prediction-with-multi-mode-confidence/data)を回してみる． \
+鍵は全データを使うことかもしれない． 
+
+0928.ipynbは，モデルを変更したもの．
