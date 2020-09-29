@@ -21,6 +21,7 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0926_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926_2.ipynb) | マルチなモデルと，lossを変更したtraining |
 | [0927.ipynb](https://github.com/root4kaido/Lyft/blob/master/0927.ipynb) | ラスタサイズとか，ピクセルサイズとか変えた．pretrainをやめた． |
 | [0928.ipynb](https://github.com/root4kaido/Lyft/blob/master/0928.ipynb) | resnet18→34 |
+| [0929.ipynb](https://github.com/root4kaido/Lyft/blob/master/0929.ipynb) | train_loader5000ごとに評価するよう変更 |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -110,4 +111,8 @@ confidenceは，inferenceだけで出せるような気がしたので，試す�
 ---
 09/29
 
-resnetは，18より34のがスコア良い．
+resnetは，18より34のがスコア良い． \
+また，上記良いスコアが出るはずのものを一日回して提出したら，スコア85がでた．やはり，大量のデータをどう使うかが鍵． \
+だが，一日回してまだ1/8くらいのデータしか使えていない… \
+0929.ipynbは，とりあえず1/4のデータを2epoch回してみる．
+
