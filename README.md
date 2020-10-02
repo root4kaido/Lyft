@@ -23,6 +23,7 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0928.ipynb](https://github.com/root4kaido/Lyft/blob/master/0928.ipynb) | resnet18→34 |
 | [0929.ipynb](https://github.com/root4kaido/Lyft/blob/master/0929.ipynb) | train_loader5000ごとに評価するよう変更 |
 | [1001_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1001_2.ipynb) | ベースモデルを回した |
+| [1003.ipynb](https://github.com/root4kaido/Lyft/blob/master/1003.ipynb) | l5kitをカスタムした．最後のRGBを削ってみた． |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -143,3 +144,11 @@ __とりあえず，ベースをちゃんと作ろう__
 1001_2.ipynbで上記ベース回し中．
 
 画像サイズ，resnetの大きさ，スケジューラーらへんは一気に回せそうなので，ためす．
+
+---
+10/02
+
+- ミスってしまったため，ベースを今回している最中．サブできなかった．
+- scale GANの論文を読んだが，なかなか難しそう…
+- l5kitを落としてきて，l5kitcustomを作った． \
+1003.ipynbで，RGBなしの22チャンネルの入力を作って，回している．
