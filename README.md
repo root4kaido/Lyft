@@ -24,6 +24,14 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [0929.ipynb](https://github.com/root4kaido/Lyft/blob/master/0929.ipynb) | train_loader5000ごとに評価するよう変更 |
 | [1001_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1001_2.ipynb) | ベースモデルを回した |
 | [1003.ipynb](https://github.com/root4kaido/Lyft/blob/master/1003.ipynb) | l5kitをカスタムした．最後のRGBを削ってみた． |
+| [1004.ipynb](https://github.com/root4kaido/Lyft/blob/master/1004.ipynb) | ? |
+| [1004_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1004_2.ipynb) | l5kitをカスタムした．最後のRGB以外を削ってみた． |
+| [1005.ipynb](https://github.com/root4kaido/Lyft/blob/master/1005.ipynb) | validのノートブック． |
+| [1005_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1005_2.ipynb) | ベースモデルpart2 |
+| [1005_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1005_3.ipynb) | validで使うデータセットを作った． |
+| [1006.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006.ipynb) | ベースモデルpart3 |
+| [1006_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006_2.ipynb) | l5kitをカスタムした．最後のRGBを削ってみた．part2 |
+| [1006_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006_3.ipynb) | 画像サイズを変えずに，俯瞰の高さを上げた． |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -153,8 +161,14 @@ __とりあえず，ベースをちゃんと作ろう__
 - l5kitを落としてきて，l5kitcustomを作った． \
 1003.ipynbで，RGBなしの22チャンネルの入力を作って，回している．
 
+---
 10/04
 
 - ベースをサブしたら，90くらいだった．
 - 1003.ipynbをサブしたら，13000くらいの値が出てしまった．意味わからん．
 - だったら，RGBの影響が強いのか？？と思ったので，この3チャンネルのみで1004_2.ipynbを回している．
+
+---
+10/05, 10/06
+
+- 上記意味わからん原因がわかった．l5kitのバージョンアップに伴い，予測するときに座標の変換が必要になるよう．これを直して，ベースモデルのスコアは65くらいだった．
