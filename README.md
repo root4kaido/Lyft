@@ -32,6 +32,20 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [1006.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006.ipynb) | ベースモデルpart3 |
 | [1006_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006_2.ipynb) | l5kitをカスタムした．最後のRGBを削ってみた．part2 |
 | [1006_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006_3.ipynb) | 画像サイズを変えずに，俯瞰の高さを上げた． |
+| [1007.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007.ipynb) | trainもvalidみたいにデータ選んだ |
+| [1007_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_2.ipynb) | 上記のデータで学習 |
+| [1007_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_3.ipynb) | ポイントネット解読 |
+| [1007_4.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_4.ipynb) | ベースにtorchsummary |
+| [1007_5.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_5.ipynb) | resnestにしてみた |
+| [1008.ipynb](https://github.com/root4kaido/Lyft/blob/master/1008.ipynb) | モバイルネットv2 |
+| [1008_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1008_2.ipynb) | 画像サイズ2倍 |
+| [1009.ipynb](https://github.com/root4kaido/Lyft/blob/master/1009.ipynb) | ？ |
+| [1009_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1009_2.ipynb) | resnet50 |
+| [1010.ipynb](https://github.com/root4kaido/Lyft/blob/master/1010.ipynb) | ベースモデルたくさん回そうと思っているやつ |
+| [1011.ipynb](https://github.com/root4kaido/Lyft/blob/master/1001.ipynb) | バリデーション見ようと思ったやつ |
+| [1011_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_2.ipynb) | メトリックできたやつ． |
+| [1011_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_3.ipynb) | アンサンブルcsvためしている |
+| [1011_4.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_4.ipynb) | モバイルネットv3 |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
@@ -188,7 +202,7 @@ __とりあえず，ベースをちゃんと作ろう__
 10/08
 
 - resnestはだめだった．パラメータ多すぎ？
-- 1008_5.ipynbはおしかったが，ベースを超えられず．
+- 1007_5.ipynbはおしかったが，ベースを超えられず．
 - ということで，1008.ipynbで，モバイルネットを試している．
 - 1008_2.ipynbで，画像サイズを二倍にしてみた．
 
