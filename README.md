@@ -203,3 +203,12 @@ __とりあえず，ベースをちゃんと作ろう__
 10/10
 
 - 1010.ipynbでベースをたくさん回すんだ
+
+---
+10/11
+
+- 1011.ipynbでバリデーション見ようとした．
+- 1011_2.ipynbで，公式の予測[ノートブック](https://github.com/lyft/l5kit/blob/master/examples/agent_motion_prediction/agent_motion_prediction.ipynb)をためした．
+結果，モバイルネット，画像center(0.75, 0.75)，ベースの順番でよかった．(0.48, 0.55, 0.68)
+- 1011_3.ipynbで，アンサンブルしてみたが，あまり良くなかった．
+- 1011_4.ipynbで，モバイルネットv3を試し中．
