@@ -47,7 +47,17 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 | [1011_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_3.ipynb) | アンサンブルcsvためしている |
 | [1011_4.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_4.ipynb) | モバイルネットv3 |
 
-
+論文
+| url | name |
+| ------ | ------ |
+| [url](https://arxiv.org/pdf/1809.10732.pdf) | マルチモーダル予測 |
+| [url](https://papers.nips.cc/paper/2019/file/757f843a169cc678064d9530d12a1881-Paper.pdf) | confidenceの改善 [ソース](https://github.com/valeoai/ConfidNet) |
+| [url](https://openaccess.thecvf.com/content_CVPR_2020/papers/Marchetti_MANTRA_Memory_Augmented_Networks_for_Multiple_Trajectory_Prediction_CVPR_2020_paper.pdf) | かえるさんが貼ったやつ |
+| [url](https://arxiv.org/pdf/1910.03650.pdf) | よくわからん |
+| [url](https://arxiv.org/pdf/2005.04259.pdf) | VectorNet |
+| [url](https://arxiv.org/pdf/1906.08469.pdf) | モバイルネット改良 |
+| [url](https://arxiv.org/pdf/1808.05819.pdf) | マルチモーダル予測に，LSTMとか加えてる |
+| [url](https://engineering.mercari.com/blog/entry/2018-04-24-164919/) | メルカリのマルチモーダル予測 |
 
 - データセットの説明
 https://github.com/lyft/l5kit/blob/master/data_format.md
