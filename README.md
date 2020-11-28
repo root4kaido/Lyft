@@ -313,6 +313,11 @@ __とりあえず，ベースをちゃんと作ろう__
 11/05
 
 - 1105で，ローパスきくんじゃね？とおもってためした．ちょっとよくなった．
+
+| lowpass前 | lowpass後 |
+| ------ | ------- |
+| <img src="https://github.com/root4kaido/Lyft/blob/master/Material/b_lowpass.png" width=100%> | <img src="https://github.com/root4kaido/Lyft/blob/master/Material/a_lowpass.png" width=100%> |
+
 - 1105_2で，テストにも適用して，サブミット．半月ぶり．
 - 1105_3で，アンサンブルに向けまたこねくりまわし．
 
