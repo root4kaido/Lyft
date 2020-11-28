@@ -7,46 +7,6 @@ https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/overview/des
 
 - MLflowで実験管理したい．
 
-| Notebook | Contents |
-| ------ | ------ |
-| [0921.ipynb](https://github.com/root4kaido/Lyft/blob/master/0921.ipynb) | zarrの中身を見る．とりあえず，sampleの，agentを確認． |
-| [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922.ipynb) | zarrの中身を見る．scene, frame, trafficを確認．visualizeもした． |
-| [0922.ipynb](https://github.com/root4kaido/Lyft/blob/master/0922_2.ipynb) | training_templateを作成した．(途中) |
-| [0923.ipynb](https://github.com/root4kaido/Lyft/blob/master/0923.ipynb) | trainin_templateの続きを作成． |
-| [0924.ipynb](https://github.com/root4kaido/Lyft/blob/master/0923.ipynb) | trainin_templateの続きを作成． |
-| [0924.ipynb](https://github.com/root4kaido/Lyft/blob/master/0924.ipynb) | inference_templateを作成． |
-| [0924_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0924_2.ipynb) | mlflowの，training_templateを作成． |
-| [0925.ipynb](https://github.com/root4kaido/Lyft/blob/master/0925.ipynb) | ラスタサイズと，epoch，データ量の変更|
-| [0926.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926.ipynb) | inferenceだけで自信度出せるか検討→無理 |
-| [0926_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/0926_2.ipynb) | マルチなモデルと，lossを変更したtraining |
-| [0927.ipynb](https://github.com/root4kaido/Lyft/blob/master/0927.ipynb) | ラスタサイズとか，ピクセルサイズとか変えた．pretrainをやめた． |
-| [0928.ipynb](https://github.com/root4kaido/Lyft/blob/master/0928.ipynb) | resnet18→34 |
-| [0929.ipynb](https://github.com/root4kaido/Lyft/blob/master/0929.ipynb) | train_loader5000ごとに評価するよう変更 |
-| [1001_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1001_2.ipynb) | ベースモデルを回した |
-| [1003.ipynb](https://github.com/root4kaido/Lyft/blob/master/1003.ipynb) | l5kitをカスタムした．最後のRGBを削ってみた． |
-| [1004.ipynb](https://github.com/root4kaido/Lyft/blob/master/1004.ipynb) | ? |
-| [1004_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1004_2.ipynb) | l5kitをカスタムした．最後のRGB以外を削ってみた． |
-| [1005.ipynb](https://github.com/root4kaido/Lyft/blob/master/1005.ipynb) | validのノートブック． |
-| [1005_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1005_2.ipynb) | ベースモデルpart2 |
-| [1005_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1005_3.ipynb) | validで使うデータセットを作った． |
-| [1006.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006.ipynb) | ベースモデルpart3 |
-| [1006_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006_2.ipynb) | l5kitをカスタムした．最後のRGBを削ってみた．part2 |
-| [1006_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1006_3.ipynb) | 画像サイズを変えずに，俯瞰の高さを上げた． |
-| [1007.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007.ipynb) | trainもvalidみたいにデータ選んだ |
-| [1007_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_2.ipynb) | 上記のデータで学習 |
-| [1007_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_3.ipynb) | ポイントネット解読 |
-| [1007_4.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_4.ipynb) | ベースにtorchsummary |
-| [1007_5.ipynb](https://github.com/root4kaido/Lyft/blob/master/1007_5.ipynb) | resnestにしてみた |
-| [1008.ipynb](https://github.com/root4kaido/Lyft/blob/master/1008.ipynb) | モバイルネットv2 |
-| [1008_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1008_2.ipynb) | 画像サイズ2倍 |
-| [1009.ipynb](https://github.com/root4kaido/Lyft/blob/master/1009.ipynb) | ？ |
-| [1009_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1009_2.ipynb) | resnet50 |
-| [1010.ipynb](https://github.com/root4kaido/Lyft/blob/master/1010.ipynb) | ベースモデルたくさん回そうと思っているやつ |
-| [1011.ipynb](https://github.com/root4kaido/Lyft/blob/master/1001.ipynb) | バリデーション見ようと思ったやつ |
-| [1011_2.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_2.ipynb) | メトリックできたやつ． |
-| [1011_3.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_3.ipynb) | アンサンブルcsvためしている |
-| [1011_4.ipynb](https://github.com/root4kaido/Lyft/blob/master/1011_4.ipynb) | モバイルネットv3 |
-
 論文
 | url | name |
 | ------ | ------ |
@@ -421,3 +381,8 @@ __とりあえず，ベースをちゃんと作ろう__
 - 1120_2で，7モードとのアンサンブル．うまくいかず．
 - 1121で，アンサンブルきれいバージョン
 - 1121_2で，テストデータのアンサンブル
+
+## 結果
+上位14%で，惨敗．結局，ベースラインから大幅な改善を出来たアイデアはなかった．敗因としては，
+- 一回の学習で14日くらいかかってしまった(速度改善にもっと重きを置くべきだった)
+これにつきる．あと，MLflowもとちゅうでやめちゃった．
